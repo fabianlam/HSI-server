@@ -45,7 +45,7 @@ def advertise_mdns():
     zeroconf.register_service(info)
     try:
         while True:
-            time.sleep(10)
+            time.sleep(5)
     except KeyboardInterrupt:
         print("Unregistering mDNS service...")
         zeroconf.unregister_service(info)
